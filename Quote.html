@@ -9,12 +9,21 @@
 <body>
     <div class="container">
         <h1>Daily Motivation Quotes</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search quotes...">
+            <button id="toggle-mode">Dark Mode</button>
+        </div>
         <div id="quote-box" class="fade-in">
             <p id="quote">Click the button to get a new quote!</p>
             <p id="author"></p>
         </div>
-        <button id="new-quote">New Quote</button>
-        <a id="tweet-quote" href="#" target="_blank">Tweet</a>
+        <div class="actions">
+            <button id="new-quote">New Quote</button>
+            <button id="favorite-quote">Favorite</button>
+            <a id="tweet-quote" href="#" target="_blank">Tweet</a>
+        </div>
+        <h2>Favorites</h2>
+        <ul id="favorites-list"></ul>
     </div>
     <script src="script.js"></script>
 </body>
