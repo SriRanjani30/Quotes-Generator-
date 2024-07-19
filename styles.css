@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +14,31 @@ body {
     padding: 2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    max-width: 500px;
 }
 
 h1 {
     margin-bottom: 1em;
+    color: #333;
 }
 
 #quote-box {
     font-size: 1.5em;
     margin-bottom: 1em;
-    color: #333;
+    color: #555;
 }
 
-button {
+#quote {
+    font-style: italic;
+}
+
+#author {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #888;
+}
+
+button, #tweet-quote {
     background-color: #6200ea;
     color: #fff;
     border: none;
@@ -34,8 +46,24 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+    text-decoration: none;
+    margin: 0.5em;
+    display: inline-block;
 }
 
-button:hover {
+button:hover, #tweet-quote:hover {
     background-color: #3700b3;
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
